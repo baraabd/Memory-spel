@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+.container {
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardsContainer {
+    position: absolute;
+    background-color: black;
+    width: 90%;
+    height: 75%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.headerContainer {
+    position: absolute;
+    background-color: cornflowerblue;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    width: 50%;
+    font-size: 2em;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.count {
+    width: 10%;
+    font-size: 1.5em;
+}
+
+.countLabel {
+    width: 15%;
+    font-size: 1.5em;
+}
+
+.level {
+    width: 2%;
+    font-size: 1.5em;
+    text-align: end;
+}
+
+.levelLabel {
+    width: 23%;
+    font-size: 1.5em;
+    text-align: end;
+}
+
+.flexItem {
+    background-image: url("./image/backgroundImage.jpg");
+    transition: all 500ms;
+    width: 14%;
+    height: 55%;
+    margin: 10px;
+}
+
+.button {
+    margin: 0;
+    margin-top: 5em;
+    width: 10em;
+    height: 5em;
+    border-radius: 20%;
+}
+
+.winnerContainer {
+    position: absolute;
+    background-image: url("./image/backgroundImage.jpg");
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 700px) and (min-width: 400px) {
+    .flexItem {
+        height: 50%;
+    }
+    .container {
+        gap: 0em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flexItem {
+        height: 50%;
+    }
+    .container {
+        gap: 0em;
+    }
+}
